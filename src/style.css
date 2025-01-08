@@ -20,14 +20,20 @@ body {
     visibility: hidden;
   }
 
+  .abrir {
+    cursor: pointer;
+  }
+
   .cerrar {
     position: absolute;
     margin-top: calc(-30px);
     visibility: hidden;
+    cursor: pointer;
   }
 
   .mostrar-boton {
     visibility: visible;
+    cursor: pointer;
   }
 }
 
@@ -35,6 +41,7 @@ a {
   text-decoration: none;
   color: #000;
   opacity: 0;
+  font-weight: 500;
 
   &:hover {
     color: rgb(1, 134, 127);
@@ -47,7 +54,7 @@ a {
   height: 90vh;
   margin: 30px;
   border-radius: 15px;
-  transition: 600ms;
+  transition-duration: 600ms;
 
   /*Lista del naybar*/
 
@@ -56,7 +63,8 @@ a {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    transition: 600ms;
+    transition-duration: 600ms;
+    transition-delay: 1s;
 
     li {
       list-style: none;
@@ -65,7 +73,8 @@ a {
       align-items: center;
       gap: 20px;
       cursor: pointer;
-      transition: 600ms;
+      transition-duration: 600ms;
+
       padding-left: 20px;
     }
 
@@ -137,7 +146,7 @@ a {
   height: 90vh;
   margin: 30px;
   border-radius: 15px;
-  transition: 500ms;
+  transition-duration: 600ms;
 
   ul {
     margin: 70px 0;
@@ -220,6 +229,7 @@ a {
 
   .ver {
     opacity: 1;
-    transition: 600ms;
+    transition-duration: 600ms;
+    transition-delay: 150ms;
   }
 }
